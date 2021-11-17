@@ -7,6 +7,7 @@ import { Text, View } from "react-native";
 import { Center } from "native-base";
 import Welcome from "./screens/Welcome";
 import Home from "./screens/Home";
+import ProductDetails from "./screens/ProductDetails";
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
         <Stack.Navigator>
           <Stack.Screen name="Welcome" component={Welcome} />
           <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="ProductDetails" component={ProductDetails} />
         </Stack.Navigator>
       </NativeBaseProvider>
     </NavigationContainer>
